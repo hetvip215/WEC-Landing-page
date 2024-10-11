@@ -21,7 +21,7 @@
     <nav>
         <!--Brand link section-->
         <div class="brand-link hide1">
-            
+            <img src="intuit-cornerstone-brand-lockup-1-line-color.jpg" style="height:21.59px; padding:4px 12px;">
         </div>
 
         <!--Offer Panel-->
@@ -290,19 +290,23 @@
                 </div>
                 <!--Right Navigation Menu-->
                 <div class="right-nav">
-                    <div class="btn hide1">
+                    <div class="btn hide1" id="search-icon">
                         <i class="fa-solid fa-magnifying-glass fa-xl"></i>
                     </div>
-                    <div class="btn hide1">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <div class="btn hide1">
-                        <a href="#" class="drop-down btn" style="height: 30px; display: flex; justify-content: center; align-items: center">
-                            EN
+                    
+                    <div class="btn hide1" id="globe-icon">
+                        <div class="btn hide1" style="margin:3px;">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <a href="#" class="drop-down btn" id="en">
+                           <span> EN </span><span class="toggle-menu">
+                                <i class='bx bx-chevron-down bx-sm'></i>
+                            </span>
                         </a>
                     </div>
                     
-                    <div class="btn hide1"><p class="btn">Sales: + (800) 315-5939</p></div>
+                    <div class="btn hide1" id="sales">
+                        <p class="btn">Sales: + (800) 315-5939</p></div>
                     <div><button id="menu-btn1" class="btn menu-btn hide1 ">Log In</button></div>
                     <div><button id="menu-btn2" class="btn menu-btn hide1">Sign Up</button></div>
 
@@ -310,7 +314,10 @@
                     <div class="small-container">
                         <div><a  class="btn hide2" style="margin:8px;">Pricing</a></div>
                         <div><button id="menu-btn3" class="btn hide2 hide-login">Log In</button></div>
-                        <div class="side-menu hide2"><i class="fa-solid fa-bars fa-2xl" style="padding-right: 16px;"></i></div>
+                        <div class="side-menu hide2">
+                            <i class="fa-solid fa-bars fa-2xl" style="padding-right: 16px;"></i>
+                            
+                        </div>
                     </div>
                 </div>
                 
@@ -625,10 +632,251 @@
             arrow_forward
             </span> 
         </button>
-        
+        </div>
     </div>
-    
+    <div class="info">
+        <h2>Generate up to 7x more orders* with Customer Journey Builder automations</h2>
+    </div>
 
+    <!--Animation section one------------------->
+    <div class="anime-parent">
+        <div class="animation1-left">
+            <img id="fixedImage" src="anime1-img1.png" alt="Fixed Image" />
+        </div>
+        <div class="animation1-right">
+            <div class="anime">
+            <div class="anime1-sec1 content-block" id="section1">
+                <h3 class="text-head">Convert more customers at scale</h3>
+                <p class="text-mid">Drive more traffic and sales by setting up automations that trigger emails based on customer behavior with our Customer Journey Builder.
+
+                </p>
+                <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                    arrow_forward
+                    </span> 
+                </button>
+            </div>
+            <div class="anime1-sec2 content-block" id="section2">
+                <h3 class="text-head">Discover new ways to automate</h3>
+                <p class="text-mid">Get a head start with pre-built journeys that help you cross-sell your products, recover abandoned carts, re-engage existing customers, and win new ones.
+                </p>
+                <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                    arrow_forward
+                    </span> 
+                </button>
+            </div>
+            <div class="anime1-sec3 content-block" id="section3">
+                <h3 class="text-head">Keep your emails relevant and your brand growing</h3>
+                <p class="text-mid"> Deliver personalized emails based on their buying behavior, survey responses, chat interactions, and support tickets to promote loyalty and growth.
+                </p>
+            </div>
+            </div>
+       </div>
+    </div> 
+
+    <!--Animation section one for smaller screen sizes--------->
+    <div class="animation1-sm">
+        <div class="section1-sm">
+            <img src="sm-section1.png" alt="Customers at sales" class="sm-anime-img">
+            <h3 class="text-head">Convert more customers at scale</h3>
+                <p class="text-mid">Drive more traffic and sales by setting up automations that trigger emails based on customer behavior with our Customer Journey Builder.
+
+                </p>
+                <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                    arrow_forward
+                    </span> 
+                </button>
+        </div>
+        <div class="section2-sm ">
+            <img src="sm-section2.png" alt="Customers at sales" class="sm-anime-img">
+            <h3 class="text-head">Discover new ways to automate</h3>
+                <p class="text-mid">Get a head start with pre-built journeys that help you cross-sell your products, recover abandoned carts, re-engage existing customers, and win new ones.
+
+                </p>
+                <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                    arrow_forward
+                    </span> 
+                </button>
+        </div>
+        <div class="section3-sm ">
+            <img src="sm-section3.png" alt="Customers at sales" class="sm-anime-img">
+            <h3 class="text-head">Keep your emails relevant and your brand growing
+            </h3>
+                <p class="text-mid" style="padding-bottom:80px ;">
+                    Deliver personalized emails based on their buying behavior, survey responses, chat interactions, and support tickets to promote loyalty and growth.
+                </p> 
+        </div>
+    </div>
+
+    <div class="animation2">
+        <div class="anime2-left">
+            <div>
+                <h2>Keep customers ready to buy with engaging content</h2>
+                <div class="row1">
+                    <button class="switch2" data-image="mobile-img.webp">
+                        <span class="content-title">Content Optimizer</span>
+                        <i class='bx bx-chevron-down bx-sm' id="anime2-btn1"></i>
+                    </button>
+                    <div class="extra-info" id="info1">
+                        <p class="drop-content1">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
+                        <button class="slider slide3"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                            arrow_forward
+                            </span> 
+                        </button>
+                    </div>
+                </div>
+                <div class="row2">
+                    <button class="switch2" data-image="Laptop-img.png">
+                        <span class="content-title">Creative assistent</span>
+                        <i class='bx bx-chevron-down bx-sm' id="anime2-btn2"></i>
+                    </button>
+                    <div class="extra-info" id="info2">
+                        <p class="drop-content2">Our Creative Assistant will help you stand out by using AI to create custom designs for your brand.</p>
+                        <button class="slider slide3"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                            arrow_forward
+                            </span> 
+                        </button>
+                    </div>
+                </div>
+                <div class="row3">
+                    <button class="switch2" data-image="GDPR-img.avif">
+                        <span class="content-title">GDPR ready tools</span>
+                        <i class='bx bx-chevron-down bx-sm' id="anime2-btn3"></i>
+                    </button>
+                    <div class="extra-info" id="info3">
+                        <p class="drop-content3">Mailchimp helps you achieve data security and privacy standards for your customers.
+
+                        </p>
+                        <button class="slider slide3"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                            arrow_forward
+                            </span> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="anime2-right">
+        <img id="dynamicImage" src="mobile-img.webp" alt="Dynamic Image">
+        </div>
+    </div>
+    <!--Animation2 for smaller screen sizes----------------->
+    <div class="sm-animation2">
+        <div>
+            <h2>Keep customers ready to buy with engaging content</h2>
+            <div class="row1">
+                <button class="switch2" data-image="sm-mobile.png">
+                    <span class="content-title">Content Optimizer</span>
+                    <i class='bx bx-chevron-down bx-sm' id="anime2-btn1"></i>
+                </button>
+                <div class="extra-info" id="info1">
+                    <p class="drop-content1">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
+                    <button class="slider slide3"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                        arrow_forward
+                        </span> 
+                    </button>
+                    <img id="dynamicImage" src="sm-mobile.png" alt="Dynamic Image">
+                </div>
+            </div>
+            <div class="row2">
+                <button class="switch2" data-image="sm-laptop.png">
+                    <span class="content-title">Creative assistent</span>
+                    <i class='bx bx-chevron-down bx-sm' id="anime2-btn2"></i>
+                </button>
+                <div class="extra-info" id="info2">
+                    <p class="drop-content2">Our Creative Assistant will help you stand out by using AI to create custom designs for your brand.</p>
+                    <button class="slider slide3"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                        arrow_forward
+                        </span> 
+                    </button>
+                    <img id="dynamicImage" src="sm-laptop.png" alt="Dynamic Image">
+                </div>
+            </div>
+            <div class="row3">
+                <button class="switch2" data-image="sm-gdpr.png">
+                    <span class="content-title">GDPR ready tools</span>
+                    <i class='bx bx-chevron-down bx-sm' id="anime2-btn3"></i>
+                </button>
+                <div class="extra-info" id="info3">
+                    <p class="drop-content3">Mailchimp helps you achieve data security and privacy standards for your customers.
+
+                    </p>
+                    <button class="slider slide3"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                        arrow_forward
+                        </span> 
+                    </button>
+                    <img id="dynamicImage" src="sm-gdpr.png" alt="Dynamic Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <h2>Get up to 141% more revenue* with our Customer Lifetime Value and Likelihood to Purchase segments</h2>
+    </div>
+
+    <!--Animation section 3---------------->
+    <div class="anime-parent">
+        <div class="animation1-left">
+            <img id="fixImg" src="anime3-img1.png" alt="Fixed Image" />
+        </div>
+        <div class="animation1-right">
+            <div class="anime">
+            <div class="anime1-sec1 content-block" id="sec1">
+                <h3 class="text-head">Mailchimp will help you focus on your most loyal and valuable customers.</h3>
+                
+            </div>
+            <div class="anime1-sec2 content-block" id="sec2">
+                <h3 class="text-head">Predict who’s likely to buy again</h3>
+                <p class="text-mid"> Create segments of customers based on their lifetime value and likelihood to purchase.
+                </p>
+                <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                    arrow_forward
+                    </span> 
+                </button>
+            </div>
+            <div class="anime1-sec3 content-block" id="sec3">
+                <h3 class="text-head">Build customers for life</h3>
+                <p class="text-mid"> Use our intelligent predictions to tighten your targeting strategy, strengthen customer relationships, and drive repeat sales.
+                </p>
+                <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                    arrow_forward
+                    </span> 
+                </button>
+            </div>
+            </div>
+       </div>
+    </div> 
+
+    <!--Animation three for smaller screen sizes--------->
+    <div class="animation1-sm">
+        <div class="section1-sm">
+            <img src="sm-anime3-img1.png" alt="Customers at sales" class="sm-anime-img">
+            <h3 class="text-head">Mailchimp will help you focus on your most loyal and valuable customers.</h3>
+                
+        </div>
+        <div class="section2-sm ">
+            <img src="sm-anime3-img2.png" alt="Customers at sales" class="sm-anime-img">
+            <h3 class="text-head">Predict who’s likely to buy again</h3>
+            <p class="text-mid"> Create segments of customers based on their lifetime value and likelihood to purchase.
+            </p>
+            <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                arrow_forward
+                </span> 
+            </button>
+        </div>
+        <div class="section3-sm ">
+            <img src="sm-anime3-img3.png" alt="Customers at sales" class="sm-anime-img">
+            <h3 class="text-head">Build customers for life</h3>
+                <p class="text-mid"> Use our intelligent predictions to tighten your targeting strategy, strengthen customer relationships, and drive repeat sales.
+                </p>
+                <button class="slider learn-more"><a>Learn more</a>  <span class="material-symbols-outlined slider-arrow">
+                    arrow_forward
+                    </span> 
+                </button>
+        </div>
+    </div>
+
+    <!--Other company information and logos------------->
+    
     </nav>
     <script src="script.js"></script>
 </body>

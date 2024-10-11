@@ -330,12 +330,56 @@ property of space-between*/
     transform: translateY(-5px); 
     box-shadow: 0 5px 0 black; 
 }
-
+#search-icon{
+    height:30px;
+    width:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-icon:hover{
+    background-color:rgb(243, 243, 243); ;
+}
+#globe-icon{
+    height:36px;
+    width:76.36px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#en{
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#globe-icon:hover{
+    background-color:rgb(243, 243, 243); ;
+}
+#sales{
+    width:177.93px; 
+    height:30.3px;
+    display: flex; 
+    justify-content: center;
+     align-items: center;
+}
+#sales:hover{
+    background-color:rgb(243, 243, 243); ;
+}
 /* Media queries for navigation-bar---------------*/
 
 @media (max-width: 1270px) {
     .nav-menu {
         display: none;
+    }
+    #search-icon{
+        display:none;
+    }
+    #globe-icon{
+        display:none;
+    }
+    #sales{
+        display:none;
     }
     .hide1 {
         display: none;
@@ -363,6 +407,12 @@ property of space-between*/
         display: none;
     }
 }
+/* Side menu bar -------*/
+/* Style for the hamburger icon */
+
+
+
+
 
 /* Styling of img cards----------------------*/
 .img-cards{
@@ -1361,4 +1411,266 @@ property of space-between*/
         font-family: var(--bigger-font);
         font-size:6vw;
     }
+}
+.info{
+    padding:80px 0px;
+    height:280px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.info h2{
+    font-family: var(--bigger-font);
+    font-weight: 600;
+    font-size: 40px;
+    width:640px;
+    height:120px;
+}
+@media(min-width:550px) and (max-width:700px){
+    .info{
+        height: 300px;
+       
+    }
+    .info h2{
+        max-width: 430px;
+        height:151px;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+}
+@media(max-width:550px){
+    .info{
+        height: 350px;
+    }
+    .info h2{
+        max-width: 430px;
+        height:200px;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+}
+/* Styling for animation section one */
+.anime-parent{
+    height:3846px;
+    display:flex;
+}
+.animation1-left{
+    width:50%;
+    height:1174px;
+    position: sticky;
+    top: 68px;
+    background-color:rgba(239,238,234,255);
+    display:flex;
+    justify-content: center;
+}
+#fixedImage{
+    height:650px;
+    width:450px;
+    position: absolute;
+    top:80px;
+}
+.text-head{
+    font-size: 32px;
+    font-weight: 300;
+    margin:0px 0px 8px;
+}
+.text-mid{
+    font-size:20px;
+    font-weight: 200;
+}
+.anime1-sec1, .anime1-sec2, .anime1-sec3{
+    font-weight: 300;
+    font-family: var(--smaller-font);
+    height:272px;
+    width:407.19px;
+}
+.animation1-right{
+    display: flex;
+    justify-content: center;
+    padding:0px 7.5vw 0px 6.34vw;
+}
+.anime{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.learn-more{
+    height:32px;
+    width:125.13px;
+    margin:40px 0px 0px;
+}
+#fixedImage {
+    height: 650px;
+    width: 450px;
+    position: absolute;
+    top: 80px;
+    
+    transform-origin: center; /* Make the image grow from the center */
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1); /* Start at normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Scale up to create the pop effect */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+}
+
+#fixedImage.pop-out {
+    animation: popOut 0.5s ease-in-out; /* Apply the pop-out animation */
+}
+.animation1-sm{
+    display:none;
+}
+@media(max-width:990px){
+    .anime-parent{
+        display:none;
+    }
+    .animation1-sm{
+        display:block;
+    }
+    .section1-sm, .section2-sm, .section3-sm{
+        margin-left: 80px;
+        margin-right: 80px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sm-anime-img{
+        padding:80px 0px 24px;
+    }
+    .learn-more{
+        margin-top: 40px;
+    }
+}
+
+/* Styling of animation2 section */
+.animation2{
+    width:100%;
+    height:59.27vw;
+    display:flex;
+}
+.anime2-left{
+    width:50%;
+    height:100%;
+    background-color: rgba(230,185,95,255);
+    padding:80px 0px 80px 4.99vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.anime2-left h2{
+    font-size: 32px;
+    margin:0px 0px 24px;
+    font-family: var(--bigger-font);
+    font-weight: 550;
+}
+.switch2{
+    background-color: rgba(230,185,95,255);
+    height:64px;
+    width:38.25vw;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0px;
+    border-bottom: 1px solid black;
+}
+.content-title{
+    font-size: 16px;
+    font-family: var(--smaller-font);
+    font-weight: 300;
+}
+.anime2-left p{
+    padding:0px 0px 24px;
+}
+.slide3{
+    background-image: linear-gradient(to right,rgba(230,185,95,255) 50%, var(--button-color) 50%);
+    border:1px solid rgba(230,185,95,255);
+    background-color:rgba(230,185,95,255) ;
+    font-size: 13px;
+    font-weight: 550;
+    height: 32px;
+    width:110.5px;
+}
+.drop-content1{
+    font-size: 20px;
+    font-family: var(--smaller-font);
+    height:120px;
+    width:38.25vw;
+    font-weight: 100;
+    color: #241C15;
+    padding:0px 0px 24px;
+}
+.drop-content2{
+    font-size: 20px;
+    font-family: var(--smaller-font);
+    height:84px;
+    width:38.25vw;
+    font-weight: 100;
+    color: #241C15;
+    padding:0px 0px 24px;
+}
+.drop-content3{
+    font-size: 20px;
+    font-family: var(--smaller-font);
+    height:60px;
+    width:38.25vw;
+    font-weight: 100;
+    color: #241C15;
+    padding:0px 0px 24px;
+}
+.anime2-right {
+    width:50%;
+    height:100%;
+}
+#dynamicImage {
+    width: 100%;
+    height:59.27vw;
+}
+.extra-info{
+    display:none;
+}
+.sm-animation2{
+    display:none;
+}
+/* Media queries for Animation section 2 */
+@media (max-width:990px){
+    .animation2{
+        display:none;
+    }
+    .sm-animation2{
+        display: block;
+        width:100%;
+        height:auto;
+        padding:80px 7.5vw;
+        background-color: rgba(230,185,95,255) ;
+    }
+    .row1{
+        width:100%;
+    }
+    .switch2{
+        width:85vw;
+    }
+    .drop-content1, .drop-content2, .drop-content3{
+        width:85vw;
+    }
+}
+#fixImg {
+    height: 650px;
+    width: 450px;
+    position: absolute;
+    top: 80px;
+    
+    transform-origin: center; /* Make the image grow from the center */
+    transition: transform 0.3s ease-in-out;
+}
+
+#fixImg.pop-out{
+    animation: popOut 0.5s ease-in-out;
 }
