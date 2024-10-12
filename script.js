@@ -1,4 +1,5 @@
 // JavaScript to toggle the dropdown on click
+
 document.querySelectorAll('.has-dropdown > a').forEach(item => {
     item.addEventListener('click', function (e) {
         e.preventDefault();
@@ -6,14 +7,18 @@ document.querySelectorAll('.has-dropdown > a').forEach(item => {
         document.querySelectorAll('.mega-dropdown').forEach(drop => {
             if (drop !== dropdown) {
                 drop.style.display = 'none';
+                drop.previousElementSibling.querySelector('i').classList.remove('rotate');
             }
         });
 
         // Toggle the clicked dropdown
         if (dropdown.style.display === 'block') {
             dropdown.style.display = 'none';
+            this.querySelector('i').classList.remove('rotate');
+            
         } else {
             dropdown.style.display = 'block';
+            this.querySelector('i').classList.add('rotate');
         }
     });
 });
@@ -25,10 +30,16 @@ document.addEventListener('click', function (e) {
     if (!isClickInside) {
         document.querySelectorAll('.mega-dropdown').forEach(drop => {
             drop.style.display = 'none';
+            // this.querySelector('i').classList.remove('rotate');
+            const icon = drop.previousElementSibling.querySelector('i');
+            if (icon) {
+                icon.classList.remove('rotate');
+            }
         });
     }
 });
 
+//for animation section 1
 const fixedImage = document.getElementById('fixedImage');
 const sections = document.querySelectorAll('.content-block');
 const sectionImages = {
@@ -55,7 +66,7 @@ window.addEventListener('scroll', () => {
 
             // Remove the animation class, force reflow, then re-add the class for the pop-out effect
             fixedImage.classList.remove('pop-out');
-            void fixedImage.offsetWidth;  // Force reflow to restart the animation
+            void fixedImage.offsetWidth;  
             fixedImage.classList.add('pop-out');
         }
     });
@@ -92,7 +103,7 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
+// for animation section two
 const switch2 = document.querySelectorAll('.switch2');
 const dynamicImage = document.getElementById('dynamicImage'); 
 const selectDrop = {
@@ -109,15 +120,18 @@ switch2.forEach(row => {
         document.querySelectorAll('.extra-info').forEach(drop => {
             if (drop !== information) {
                 drop.style.display = 'none'; // Hide other 'extra-info' divs
-
+                drop.previousElementSibling.querySelector('i').classList.remove('rotate');
             }
         });
 
         // Toggle display of the current 'extra-info' div
         if (information.style.display === 'block') {
             information.style.display = 'none';
+            this.querySelector('i').classList.remove('rotate');
+
         } else {
             information.style.display = 'block';
+            this.querySelector('i').classList.add('rotate');
         }
     });
 });

@@ -207,6 +207,13 @@ property of space-between*/
 .mega-rtext:hover{
     background-color: rgb(234, 232, 232);
 }
+.toggle {
+    transition: transform 0.3s ease;  /* Smooth rotation transition */
+}
+
+.rotate {
+    transform: rotate(180deg);  /* Rotation for the icon */
+}
 /* Styling of resourses dropdown */
 .resourse-dropdown{
     display:none;
@@ -407,12 +414,6 @@ property of space-between*/
         display: none;
     }
 }
-/* Side menu bar -------*/
-/* Style for the hamburger icon */
-
-
-
-
 
 /* Styling of img cards----------------------*/
 .img-cards{
@@ -1852,7 +1853,7 @@ property of space-between*/
     .data-head-sm h2 {
         font-family: var(--bigger-font);
         font-size: 34px;
-        max-width: 80vw; /* max-width for responsiveness */
+        max-width: 80vw; 
         height: 12vw;
         margin-bottom: 16px;
     }
@@ -1862,7 +1863,7 @@ property of space-between*/
         width: auto;
         height: 100vw;
         padding-bottom: 40px;
-        padding-left: 10px; /* Use padding instead of margin */
+        padding-left: 10px; 
     }
     .grid-data-sm ul {
         list-style-type: none;
